@@ -14,12 +14,12 @@ Submodules if u are using pathogen
 
 SYMBOLS
 
-mdkir ~/.fonts
+mkdir ~/.fonts
 cp ~/.vim/symbols/PowerlineSymbols.otf ~/.fonts/
 fc-cache -vf ~/.fonts/
 
 mkdir -p ~/.config/fontconfig/conf.d/
-cp 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+cp ~/.vim/symbols/10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
 
 For vundle
