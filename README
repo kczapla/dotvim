@@ -12,7 +12,18 @@ Submodules if u are using pathogen
 	git submodule init #Initializing sub modules
 	git submodule update
 
+SYMBOLS
+
+mdkir ~/.fonts
+cp ~/.vim/symbols/PowerlineSymbols.otf ~/.fonts/
+fc-cache -vf ~/.fonts/
+
+mkdir -p ~/.config/fontconfig/conf.d/
+cp 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+
+
 For vundle
+
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 touch .gitignore
     echo "bundle/*" >> .gitignore
