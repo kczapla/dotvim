@@ -1,0 +1,38 @@
+Installation:
+	
+	git clone git://github.com/perunn/dotvim.git ~/.vim
+
+Create symlinks:
+
+	ln -s ~/dotfiles/vimrc ~/.vimrc
+	ln -s ~/dotfiles/gvimrc ~/.gvimrc
+
+Submodules if u are using pathogen
+
+	git submodule init #Initializing sub modules
+	git submodule update
+
+For vundle
+touch .gitignore
+    echo "bundle/*" >> .gitignore
+    echo "~/.vim/bundle/* >> .gitignore
+    git status
+    git add .gitignore
+    git commit -am "Add .gitignore"
+
+Compile vim from source
+	
+	cd ~
+	hg clone https://code.google.com/p/vim/
+	cd vim
+	./configure --with-features=huge \
+         	   --enable-multibyte \
+	            --enable-rubyinterp \
+        	    --enable-pythoninterp \
+	            --with-python-config-dir=/usr/lib/python2.7/config \
+	            --enable-perlinterp \
+	            --enable-luainterp \
+        	    --enable-gui=gtk2 --enable-cscope --prefix=/usr
+	make VIMRUNTIMEDIR=/usr/share/vim/vim74
+	sudo make install
+	vim --version  
