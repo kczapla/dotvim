@@ -13,6 +13,7 @@ Submodules if u are using pathogen
 	git submodule update
 
 For vundle
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 touch .gitignore
     echo "bundle/*" >> .gitignore
     echo "~/.vim/bundle/* >> .gitignore
