@@ -32,6 +32,9 @@ touch .gitignore
     git add .gitignore
     git commit -am "Add .gitignore"
 
+Or use automatic way executing install.sh
+It will fix problem with symbols and install vundle plugin
+
 Compile vim from source
 	
 	cd ~
