@@ -17,6 +17,10 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 "PythonMode bundle
 Bundle 'klen/python-mode'
+"DelimitMate auto close of brackets etc.
+Bundle 'Raimondi/delimitMate'
+
+
 ">>>>>>>>>>>>>>>>>>>>Color Scheme<<<<<<<<<<<<<<<<<
 Bundle 'nanotech/jellybeans.vim'
 
@@ -61,25 +65,21 @@ set foldlevel=1
 let mapleader = ","
 
 "Tab navigation shortcuts
-nmap <Leader>l :tabp<CR>
-nmap <Leader>n :tabe<Space>
+" Next tab (to the right) 
+nmap <Leader>m :tabnext<CR>
+" New file in new tab
+nmap <Leader>e :tabe<Space>
+" Cloce current tab
 nmap <Leader>c :tabc<CR>
-nmap <Leader>r :tabnext<CR> 
+" Previous tab (to the left)
+nmap <Leader>n :tabp<CR> 
+" writing currenent file
+nmap <Leader>w :w<CR> 
+" Close whole program without saving
+nmap <Leader>q :qall!<CR> 
 
 "leader and mapping
 let mapleader = ","
-
-"switch to previous tab
-nmap <Leader>l :tabp<CR> 
-"Open new file
-nmap <Leader>n :tabe<CR> 
-"Open file from location
-nmap <Leader>o :tabe<Space> 
-"Save current file
-nmap <Leader>c :tabc<CR>
-nmap <Leader>r :tabnext<CR> 
-nmap <Leader>q :qall!<CR>
-
 
 " Powerline setup
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
