@@ -1,6 +1,6 @@
 "Vundle options
 set nocompatible
-filetype off
+filetype off 
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -19,6 +19,9 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
 "delimitMate bundle, autoclosing brackets
 Bundle 'Raimondi/delimitMate'
+"Jedi bundle, python autocompletion plugin
+Bundle 'dhalter/jedi-vim'
+
 ">>>>>>>>>>>>>>>>>>>>Color Scheme<<<<<<<<<<<<<<<<<
 Bundle 'nanotech/jellybeans.vim'
 
@@ -62,18 +65,20 @@ set foldlevel=1
 "leader and mapping
 let mapleader = ","
 
-"switch to previous tab
-nmap <Leader>n :tabp<CR> 
-"Open new file
-nmap <Leader>e :tabe<Space> 
-"Save current file
-nmap <Leader>w :w <CR>
-"Close current tab
+
+"Tab navigation shortcuts
+" Next tab (to the right) 
+nmap <Leader>m :tabnext<CR>
+" New file in new tab
+nmap <Leader>e :tabe<Space>
+" Cloce current tab
 nmap <Leader>c :tabc<CR>
-"Swich to the next tab
-nmap <Leader>m :tabnext<CR> 
-"Close all tabs
-nmap <Leader>q :qall!<CR>
+" Previous tab (to the left)
+nmap <Leader>n :tabp<CR> 
+" writing currenent file
+nmap <Leader>w :w<CR> 
+" Close whole program without saving
+nmap <Leader>q :qall!<CR> 
 
 
 " Powerline setup
@@ -97,6 +102,9 @@ map <F2> :NERDTreeToggle<CR>
 " " [M            Jump on previous class or method (normal, visual, operator, modes)
 " " ]M            Jump on next class or method (normal, visual, operator, modes)
 let g:pymode_rope = 1
+
+" Swich off code completion
+let g:pymode_rope_completion = 0
 
 " Documentation
 let g:pymode_doc = 0
@@ -124,3 +132,7 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 " Don't autofold code
 let g:pymode_folding = 0
 
+" Jedi configuration
+" Swich off documentation window popup
+autocmd FileType python setlocal completeopt-=preview
+let g:jedi#usages_command = "None"
