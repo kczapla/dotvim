@@ -17,6 +17,8 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/nerdtree'
 "PythonMode bundle
 Bundle 'klen/python-mode'
+"delimitMate bundle, autoclosing brackets
+Bundle 'Raimondi/delimitMate'
 ">>>>>>>>>>>>>>>>>>>>Color Scheme<<<<<<<<<<<<<<<<<
 Bundle 'nanotech/jellybeans.vim'
 
@@ -57,27 +59,20 @@ set foldnestmax=10 "deepest fold is 10 lvls
 set nofoldenable "dont fold by defoult
 set foldlevel=1 
 
-"New key leader 
-let mapleader = ","
-
-"Tab navigation shortcuts
-nmap <Leader>l :tabp<CR>
-nmap <Leader>n :tabe<Space>
-nmap <Leader>c :tabc<CR>
-nmap <Leader>r :tabnext<CR> 
-
 "leader and mapping
 let mapleader = ","
 
 "switch to previous tab
-nmap <Leader>l :tabp<CR> 
+nmap <Leader>n :tabp<CR> 
 "Open new file
-nmap <Leader>n :tabe<CR> 
-"Open file from location
-nmap <Leader>o :tabe<Space> 
+nmap <Leader>e :tabe<Space> 
 "Save current file
+nmap <Leader>w :w <CR>
+"Close current tab
 nmap <Leader>c :tabc<CR>
-nmap <Leader>r :tabnext<CR> 
+"Swich to the next tab
+nmap <Leader>m :tabnext<CR> 
+"Close all tabs
 nmap <Leader>q :qall!<CR>
 
 
@@ -104,7 +99,7 @@ map <F2> :NERDTreeToggle<CR>
 let g:pymode_rope = 1
 
 " Documentation
-let g:pymode_doc = 1
+let g:pymode_doc = 0
 let g:pymode_doc_key = 'K'
 
 " Linting
