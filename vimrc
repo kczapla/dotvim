@@ -9,8 +9,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 ">>>>>>>>>>>>>>>>>>>>Plugins<<<<<<<<<<<<<<<<<<<<<<
-"Powerline bundle
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+"AirLine bundle
+Bundle 'bling/vim-airline'
 "Fugitive bundle
 Bundle 'tpope/vim-fugitive'
 "NerdTree Bundle
@@ -20,7 +20,7 @@ Bundle 'klen/python-mode'
 "delimitMate bundle, autoclosing brackets
 Bundle 'Raimondi/delimitMate'
 "Jedi bundle, python autocompletion plugin
-Bundle 'dhalter/jedi-vim'
+Bundle 'davidhalter/jedi-vim'
 
 ">>>>>>>>>>>>>>>>>>>>Color Scheme<<<<<<<<<<<<<<<<<
 Bundle 'nanotech/jellybeans.vim'
@@ -81,8 +81,13 @@ nmap <Leader>w :w<CR>
 nmap <Leader>q :qall!<CR> 
 
 
-" Powerline setup
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+" AirLine setup
+let g:airline#extensions#tabline#enabled = 1
+
+" set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
+" to have that super extra symbols
+let g:airline_powerline_fonts = 1
+" powerline will be disp;ayed all the time
 set laststatus=2
 
 " NerdTree setup
