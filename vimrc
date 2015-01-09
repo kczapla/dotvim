@@ -21,6 +21,8 @@ Bundle 'klen/python-mode'
 Bundle 'Raimondi/delimitMate'
 "Jedi bundle, python autocompletion plugin
 Bundle 'davidhalter/jedi-vim'
+"markdown folding
+Bundle 'nelstrom/vim-markdown-folding'
 
 ">>>>>>>>>>>>>>>>>>>>Color Scheme<<<<<<<<<<<<<<<<<
 Bundle 'nanotech/jellybeans.vim'
@@ -141,3 +143,10 @@ let g:pymode_folding = 0
 " Swich off documentation window popup
 autocmd FileType python setlocal completeopt-=preview
 let g:jedi#usages_command = "None"
+
+"Markdown folding configuration
+"
+set nocompatible 
+if has("autocmd")
+        filetype plugin indent on
+endif
