@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 mkdir ~/.fonts
 cp ~/.vim/symbols/PowerlineSymbols.otf ~/.fonts/
