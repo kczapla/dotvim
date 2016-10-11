@@ -1,0 +1,8 @@
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+filetype plugin indent on
+syntax enable
+let g:python3_host_prog = '/home/kczapla/.virtualenvs/neovim/bin/python'
+let g:python_host_prog = '~/.virtualenvs/neovim2/bin/python'
