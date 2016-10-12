@@ -16,7 +16,7 @@ call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
 call dein#add('Shougo/deoplete.nvim')
-call dein#add('Shougo/deoplete-jedi.nvim')
+call dein#add('Shougo/deoplete-jedi')
 call dein#add('Shougo/denite.nvim')
 
 " Required:
