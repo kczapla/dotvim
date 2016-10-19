@@ -13,11 +13,12 @@ call dein#begin('~/.vim/bundles/')
 call dein#add('Shougo/dein.vim')
 
 " Add or remove your plugins here:
+call dein#add('jnurmine/Zenburn')
 call dein#add('Shougo/deoplete.nvim')
-call dein#add('zchee/deoplete-jedi')
 call dein#add('Shougo/denite.nvim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
+call dein#add('zchee/deoplete-jedi')
 " Required:
 call dein#end()
 

@@ -2,7 +2,15 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" Relative number by default
+set number
+set rnu
+
+map <SPACE> <leader>
+
 filetype plugin indent on
 syntax enable
+colorscheme Zenburn
+
 let g:python3_host_prog = '/Users/kczapla/.virtualenv/pynvim3/bin/python'
 let g:python_host_prog = '/Users/kczapla/.virtualenv/pynvim2/bin/python'
