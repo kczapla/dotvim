@@ -18,12 +18,14 @@ call dein#add('Shougo/deoplete.nvim')
 call dein#add('Shougo/denite.nvim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
+call dein#add('zchee/deoplete-clang')
 call dein#add('zchee/deoplete-jedi')
 " Required:
 call dein#end()
 
 
 " Source plugins confg
+so $HOME/.vim/deoplete_clang.nvim
 so $HOME/.vim/denite_init.nvim
 so $HOME/.vim/deoplete_init.nvim
 so $HOME/.vim/neosnippet_init.nvim
