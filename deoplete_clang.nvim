@@ -1,0 +1,13 @@
+if has('unix')
+    let s:uname = system("uname")
+    if s:uname == "Darwin"
+        let os="mac"
+    else
+        let os="unix"
+    endif
+endif
+let os = "mac"
+if os == "mac"
+    let g:deoplete#sources#clang#libclang_path = "/Library/Developer/CommandLineTools/usr/lib/libclang.dylib"
+    let g:deoplete#sources#clang#clang_header = "/Library/Developer/CommandLineTools/usr/lib/clang"
+endif
