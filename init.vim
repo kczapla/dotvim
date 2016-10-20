@@ -2,6 +2,8 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
+" Global settings
+
 " Required:
 set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
 
