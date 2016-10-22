@@ -2,8 +2,6 @@ if &compatible
   set nocompatible               " Be iMproved
 endif
 
-" Global settings
-
 " Required:
 set runtimepath+=~/.vim/bundles/repos/github.com/Shougo/dein.vim
 
@@ -25,10 +23,12 @@ call dein#add('zchee/deoplete-jedi')
 " Required:
 call dein#end()
 
+" Utils
+so $HOME/.vim/utils.vim
 
 " Source plugins confg
-so $HOME/.vim/deoplete_clang.nvim
-so $HOME/.vim/denite_init.nvim
-so $HOME/.vim/deoplete_init.nvim
-so $HOME/.vim/neosnippet_init.nvim
-so $HOME/.vim/utils.nvim
+so $HOME/.vim/cross_line_init.vim
+so $HOME/.vim/deoplete_clang.vim
+so $HOME/.vim/denite_init.vim
+so $HOME/.vim/deoplete_init.vim
+so $HOME/.vim/neosnippet_init.vim

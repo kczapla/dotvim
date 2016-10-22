@@ -9,12 +9,17 @@ set expandtab
 set number
 set rnu
 
-map <SPACE> <leader>
+" Custom leader key
+let mapleader="\<Space>"
+" New files
+nnoremap <Leader>e :e<Space>
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
 
 filetype plugin indent on
 syntax enable
 colors zenburn
 
-
+" Virtual envs with essential python packages
 let g:python3_host_prog = join([home_dir, '.virtualenvs/pynvim3/bin/python'], '/')
 let g:python_host_prog = join([home_dir, '.virtualenvs/pynvim2/bin/python'], '/')
