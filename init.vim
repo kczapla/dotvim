@@ -32,3 +32,4 @@ so $HOME/.vim/deoplete_clang.vim
 so $HOME/.vim/denite_init.vim
 so $HOME/.vim/deoplete_init.vim
 so $HOME/.vim/neosnippet_init.vim
+so $HOME/.vim/toggle_line_modes.vim

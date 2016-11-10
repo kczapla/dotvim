@@ -5,9 +5,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" Relative number by default
-set number
-set rnu
+" swap files settings
+set dir=~/.vim-tmp
 
 " Custom leader key
 let mapleader="\<Space>"
