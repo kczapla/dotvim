@@ -18,6 +18,8 @@ call dein#add('Shougo/deoplete.nvim')
 call dein#add('Shougo/denite.nvim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
+call dein#add('scrooloose/nerdcommenter')
+call dein#add('tpope/vim-surround')
 call dein#add('zchee/deoplete-clang')
 call dein#add('zchee/deoplete-jedi')
 " Required:
@@ -32,4 +34,5 @@ so $HOME/.vim/deoplete_clang.vim
 so $HOME/.vim/denite_init.vim
 so $HOME/.vim/deoplete_init.vim
 so $HOME/.vim/neosnippet_init.vim
+so $HOME/.vim/nerdcommenter_init.vim
 so $HOME/.vim/toggle_line_modes.vim
