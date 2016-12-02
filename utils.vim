@@ -14,6 +14,7 @@ let mapleader="\<Space>"
 nnoremap <Leader>e :e<Space>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
+nnoremap <Leader>qq :q!<CR>
 
 filetype plugin indent on
 syntax enable
