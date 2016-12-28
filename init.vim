@@ -13,13 +13,15 @@ call dein#begin('~/.vim/bundles/')
 call dein#add('Shougo/dein.vim')
 
 " Add or remove your plugins here:
+call dein#add('godlygeek/tabular')
 call dein#add('jnurmine/Zenburn')
 call dein#add('Shougo/deoplete.nvim')
 call dein#add('Shougo/denite.nvim')
 call dein#add('Shougo/neosnippet.vim')
 call dein#add('Shougo/neosnippet-snippets')
+call dein#add('neomake/neomake')
+call dein#add('plasticboy/vim-markdown')
 call dein#add('scrooloose/nerdcommenter')
-call dein#add('tpope/vim-surround')
 call dein#add('zchee/deoplete-clang')
 call dein#add('zchee/deoplete-jedi')
 " Required:
