@@ -13,6 +13,7 @@ call dein#begin('~/.vim/bundles/')
 call dein#add('Shougo/dein.vim')
 
 " Add or remove your plugins here:
+call dein#add('gioele/vim-autoswap')
 call dein#add('godlygeek/tabular')
 call dein#add('jnurmine/Zenburn')
 call dein#add('Shougo/deoplete.nvim')
