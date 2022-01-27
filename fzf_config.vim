@@ -10,4 +10,4 @@ imap <c-x><c-l> <plug>(fzf-complete-line)
 nnoremap <silent> <c-f> :Files<CR>
 nnoremap <silent> <c-f><c-g> :GFiles<CR>
 nnoremap <silent> <c-f><c-r> :GGrep<CR>
-
+nnoremap <silent> <c-f><c-u> :Snippets<CR>
