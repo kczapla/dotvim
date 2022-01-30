@@ -7,4 +7,5 @@ Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'preservim/vimux'
 call plug#end()
