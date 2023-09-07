@@ -1,3 +1,6 @@
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -23,12 +26,14 @@ require("lazy").setup(
 	'tpope/vim-surround',
 	'tpope/vim-fugitive',
 	'tpope/vim-sensible',
+	'tpope/vim-commentary',
 	{
 	  'folke/tokyonight.nvim',
 	  lazy = false,
 	  priority = 1000,
 	  opts = {},
-	}
+	},
+	'nvim-tree/nvim-tree.lua'
 }
 )
 
@@ -40,3 +45,4 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 require('user.settings')
 require('user.lsp')
 require('user.nvimcmp')
+require('user.nvimtree')
